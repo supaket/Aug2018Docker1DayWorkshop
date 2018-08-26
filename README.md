@@ -1,6 +1,6 @@
 Docker Hands-on Workshop
 ========================
-
+###### Credit https://github.com/robrich/docker-hands-on-workshop 
 Welcome to the Docker Hands-on workshop.
 
 

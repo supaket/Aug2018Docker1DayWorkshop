@@ -1,4 +1,4 @@
-# Lab 3 - Networking
+# Lab - Networking
 
 This lab will give you time to work with the various networking features of the Docker stack and implement a network design in your current application.
 

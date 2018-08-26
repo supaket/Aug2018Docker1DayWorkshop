@@ -4,8 +4,10 @@ It's important to clean up unused stopped containers, old images, etc.
 
 - Remove all stopped containers:
 
-  `docker container rm $(docker container ls -a -q)`
-
+  `docker rm $(docker container ls -a -q)`
+- Remove all unused images 
+  `docker image prune`
+  
 - Remove all dangling images:
 
   `docker image rm $(docker images -f dangling=true)`

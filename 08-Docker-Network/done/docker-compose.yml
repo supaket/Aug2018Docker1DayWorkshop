@@ -5,6 +5,8 @@ services:
      image: mysql:5.7
      volumes:
        - db_data:/var/lib/mysql
+     networks:
+       - dbnet
      restart: always
      environment:
        MYSQL_ROOT_PASSWORD: somewordpress
@@ -16,6 +18,9 @@ services:
      depends_on:
        - db
      image: wordpress:latest
+     networks:
+       - dbnet
+       - webnet
      ports:
        - "8000:80"
      restart: always
@@ -25,3 +30,9 @@ services:
        WORDPRESS_DB_PASSWORD: wordpress
 volumes:
     db_data:
+
+networks:
+  dbnet:
+    driver: bridge
+  webnet:
+    driver: bridge

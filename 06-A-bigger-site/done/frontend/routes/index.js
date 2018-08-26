@@ -3,7 +3,7 @@ const request = require('request');
 
 // Get backend ip:
 // `docker container inspect --format "{{ .NetworkSettings.IPAddress }}" containernamehere`
-const BACKEND = 'http://172.17.0.2:5000';
+const BACKEND = 'http://backend:5000';
 
 let router = express.Router();
 

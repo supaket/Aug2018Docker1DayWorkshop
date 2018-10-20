@@ -44,3 +44,4 @@ If you find the guy in the front of the room particularly boring, jump into thes
 - https://katacoda.com/
 - https://docs.docker.com/learn/
 - https://docs.docker.com/engine/tutorials/
+- https://www.youtube.com/watch?v=YFl2mCHdv24
